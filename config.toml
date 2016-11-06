@@ -1,0 +1,4 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+title = "You can be a wizard with Linux"
+languageCode = "en-us"
+theme = "hugo_theme_robust"
