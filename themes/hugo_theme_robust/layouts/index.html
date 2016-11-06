@@ -2,5 +2,15 @@
 
 
 {{ define "main" }}
-hi
+<ul> 
+    {{ range .Data.Pages }}
+        <li>
+            <span><a  style="font-family: Montserrat, sans-serif; color:
+            black;font-size: 14px;"
+                      href="{{.RelPermalink}}">{{.Title}}</a></span>
+        </li>
+    {{ end }}
+</ul>
+</div>
+
 {{ end }}

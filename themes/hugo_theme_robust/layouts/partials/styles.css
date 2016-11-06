@@ -45,7 +45,15 @@ h3 { font-size: 1.2rem; line-height: 1.5rem; margin: 1.5rem 0; }
 h4, h5, h6 { font-size: 1rem; line-height: 1.5rem; margin: 1.5rem 0; }
 
 main {
+  width: 60%;
   display: block;
+  margin: 0 auto;
+}
+
+@media (max-width:  768px)  {
+    main {
+      display: block;
+    }
 }
 
 .content-inner {
@@ -76,6 +84,7 @@ main {
 }
 
 .l-footer {
+    display: none;
   font-size: .8rem;
   padding: 1.5rem 0;
 }
