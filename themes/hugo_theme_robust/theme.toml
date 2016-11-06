@@ -4,7 +4,7 @@ licenselink = "https://github.com/dim0627/hugo_theme_robust/blob/master/LICENSE.
 description = "Grid based theme for Hugo."
 homepage = "https://github.com/dim0627/hugo_theme_robust"
 tags = ["blog"]
-features = ["responsive", "thumbnail", "grid", "syntax highlight", "structured data", "ogp", "twitter cards"]
+features = ["responsive", "thumbnail", "syntax highlight", "structured data", "ogp", "twitter cards"]
 min_version = 0.16
 
 [author]
