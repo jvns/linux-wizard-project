@@ -79,27 +79,6 @@ def run(cmd)
   puts cmd
   system(cmd)
 end
-desc "Default deploy task"
-task :deploy do
-  Rake::Task["build"].execute
-  system "chmod 664 static/images/*"
-  system "chmod 777 static/images/drawings"
-  system "chmod 777 static/images/rust-talk"
-  system "chmod 777 static/images/stl-talk"
-  Rake::Task["#{deploy_default}"].execute
-  puts "Clearing Cloudflare cache"
-  system "bash scripts/cloudflare_clear_cache.sh"
-end
-
-desc "Deploy website via rsync"
-task :rsync do
-  exclude = ""
-  if File.exists?('./rsync-exclude')
-    exclude = "--exclude-from '#{File.expand_path('./rsync-exclude')}'"
-  end
-  puts "## Deploying website via Rsync"
-  ok_failed run("rsync --size-only -avze 'ssh -p #{ssh_port}' #{exclude} #{rsync_args} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root}")
-end
 
 def ok_failed(condition)
   if (condition)
