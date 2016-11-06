@@ -15,7 +15,6 @@ deploy_default = "rsync"
 public_dir      = "public"    # compiled site directory
 source_dir      = "content"    # source file directory
 static_dir      = "static"
-posts_dir       = "post"    # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 
 #######################
@@ -46,7 +45,7 @@ end
 
 
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
-desc "Begin a new post in #{source_dir}/#{posts_dir}"
+desc "Begin a new post in #{source_dir}"
 task :new_post, :title do |t, args|
   if args.title
     title = args.title
@@ -54,8 +53,8 @@ task :new_post, :title do |t, args|
     title = get_stdin("Enter a title for your post: ")
   end
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
-  mkdir_p "#{source_dir}/#{posts_dir}"
-  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{to_url(title)}.#{new_post_ext}"
+  mkdir_p "#{source_dir}"
+  filename = "#{source_dir}/#{to_url(title)}.#{new_post_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
