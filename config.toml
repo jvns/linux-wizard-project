@@ -1,4 +1,5 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://jvns.ca/secret-project/"
 title = "You can be a wizard with Linux"
 languageCode = "en-us"
 theme = "hugo_theme_robust"
+
