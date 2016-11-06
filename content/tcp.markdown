@@ -1,5 +1,5 @@
 ---
-title: "tcp"
+title: "NETWORKING: Why you should understand (a little) about TCP"
 date: 2016-11-05T22:56:10Z
 url: /tcp/
 weight: 500

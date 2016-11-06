@@ -5,4 +5,4 @@ url: /fun-with-files/
 weight: 300
 ---
 
-<img src="/images/filesystem-cache.jpg">
+<img src="/images/filesystem-cache.jpg" width=100%>
