@@ -50,3 +50,22 @@ The Linux kernel is 4 million lines of code partly because it has to
 understand **all kinds of weird things**. That file was just for Apple
 keyboards! There are much more complicated devices than keyboards (hard
 drives and filesystems are a lot more work to understand).
+
+### Exercise: search the Linux kernel code
+
+We've arrived at our first exercise! Your mission: search the Linux
+kernel and find some words that almost make sense. I don't expect you to
+understand what's going on, necessarily. It's okay if you don't know C!
+The goal is to
+
+1. Understand that the Linux kernel is a (really big) program
+1. Look at some of the code and realize that, whether or not you
+   understand what it's doing, it's not magic. It's code!
+
+You can search the kernel's code by going to
+[https://livegrep.com/search/linux](https://livegrep.com/search/linux)
+and typing in some words. Try searching for "fancy" or "tree walk" or
+"memory"!
+
+In general we're going to be using more friendly ways to interact with
+the kernel than reading its code, don't worry :)
