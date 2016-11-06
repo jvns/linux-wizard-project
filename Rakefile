@@ -63,7 +63,6 @@ task :new_post, :title do |t, args|
     post.puts "---"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
     post.puts "date: #{Time.now.strftime('%Y-%m-%dT%H:%M:%SZ')}"
-    post.puts "draft: true"
     post.puts "url: /#{to_url(title)}/"
     post.puts "---"
   end
