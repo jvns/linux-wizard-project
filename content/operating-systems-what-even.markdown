@@ -33,15 +33,13 @@ communicate with a hard drive by themselves they'd have a heart attack.
 ### the "kernel": it's a really big program
 
 So we said that programs have no idea how to read files! But **someone**
-needs to know about it. The program that's responsible for everything is
-called the "kernel".
-
-The Linux kernel is a (really big!) program responsible for all the
-tasks we talked about in the diagram above.
+needs to know about it. The Linux kernel is a (really big!) program
+responsible for all the tasks we talked about in the diagram above.
 
 It's written in C and it's several million lines of code. We're not going to spend too
 much time reading kernel code, because how to do that is a whole book by
-itself. But just to show you that the kernel is a real program that you can look at -- check out this code that
+itself ("Linux Kernel Development", by Robert Love. It's great). 
+But just to show you that the kernel is a real program that you can look at -- check out this code that
 [helps makes the keyboard on the 2015 Macbook Pro work](https://github.com/torvalds/linux/blob/v4.5/drivers/hid/hid-apple.c).
 
 One of the lines in that program is `if (asc->quirks &
