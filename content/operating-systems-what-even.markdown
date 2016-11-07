@@ -18,7 +18,7 @@ operating system.
 
 ### What does your operating system even do?
 
-![caption](/secret-project/images/os-responsibilities.svg)
+![caption](images/os-responsibilities.png)
 
 Your computer needs to do a ton of stuff like
 
