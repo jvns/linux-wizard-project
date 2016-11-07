@@ -5,6 +5,8 @@ weight: 101
 url: /operating-systems-what-even/
 ---
 
+# Operating systems
+
 Hello! Our plan in this project is to become GREAT FRIENDS WITH YOUR
 OPERATING SYSTEM. When you understand your operating system, it can
 really help you out with debugging and understanding what your programs
