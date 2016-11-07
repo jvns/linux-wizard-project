@@ -89,6 +89,9 @@ main {
   padding: 1.5rem 0;
 }
 
+img {
+	width: 100%;
+}
 /* Parts:facts */
 .p-facts {
   list-style: none;
