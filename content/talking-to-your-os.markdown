@@ -4,3 +4,19 @@ date: 2016-11-06T12:35:05Z
 weight: 102
 url: /talking-to-your-os/
 ---
+
+## Talking to your operating system (system calls!!)
+
+We just learned that our operating system knows how to do ALL KINDS OF
+AMAZING THINGS. 
+
+This is amazing because when I write programs, my program doesn't need
+to understand how a hard drive works to read a file. But how do I ask
+the operating system to do work for me? The answer: ★★★ system calls
+★★★!
+
+System calls are basically your operating system's interface. Want to
+open a file? Use the `open` system call! Want to read from that file?
+It's just a `read` away!
+
+
