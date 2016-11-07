@@ -89,6 +89,24 @@ main {
   padding: 1.5rem 0;
 }
 
+/* Parts:facts */
+.p-facts {
+  list-style: none;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
+.p-facts li {
+  display: inline-block;
+  margin-right: .5rem;
+  color: #90a4ae;
+}
+
+.p-facts li i {
+  margin-right: .5rem;
+  color: #cfd8dc;
+}
+
 /* Parts:section */
 section {
   margin-bottom: 1.5rem;
