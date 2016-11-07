@@ -15,7 +15,7 @@ But first, we have to understand what an operating system even is. We're
 going to be talking about Linux, but all of this actually applies to ANY
 operating system.
 
-### What does your operating system even do?
+## What does your operating system even do?
 
 ![caption](/images/os-responsibilities.png)
 
