@@ -12,11 +12,10 @@ AMAZING THINGS.
 
 This is amazing because when I write programs, my program doesn't need
 to understand how a hard drive works to read a file. But how do I ask
-the operating system to do work for me? The answer: ★★★ system calls
-★★★!
+the operating system to do work for me? The answer: ★ SYSTEM CALLS ★!
 
 System calls are basically your operating system's interface. Want to
-open a file? Use the `open` system call! Want to read from that file?
-It's just a `read` away!
+open a file? Use the `open` system call! Want to read from the file you
+just opened? It's just a `read` away!
 
 
