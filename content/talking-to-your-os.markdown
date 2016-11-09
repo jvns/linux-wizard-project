@@ -18,4 +18,33 @@ System calls are basically your operating system's interface. Want to
 open a file? Use the `open` system call! Want to read from the file you
 just opened? It's just a `read` away!
 
+All Unix operating systems (macOS, Linux, BSD) have basically the same
+system calls.
 
+### Every programming language uses system calls!
+
+Here are code snippets in 4 different programming languages that all
+use the `open` system call under the hood:
+
+**Python** & **Ruby**:
+
+```
+open("./awesome.txt")
+```
+
+**Java**
+
+```
+Files.readAllBytes(Paths.get("file.txt"));
+```
+
+**C**:
+
+```
+fopen ("myfile.txt","w");
+```
+
+These programs do slightly different things (the Java program reads the
+whole file, while the Python program just opens it). But they all use
+exactly the same system call to open a file! From the operating system's
+perspective, they're all super similar.
